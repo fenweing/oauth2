@@ -1,0 +1,12 @@
+server:
+  port: 8081
+security:
+  oauth2:
+    client:
+      client-id: client1
+      client-secret: qwe
+      access-token-uri: http://localhost:8080/oauth/token
+      grant-type: authorization_code
+      scope: user
+    resource:
+      token-info-uri: http://localhost:8080/oauth/check_token
